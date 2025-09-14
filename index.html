@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rai Services Loan Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔐 Login Box -->
+  <div id="loginBox">
+    <h2>🔐 Rai Services Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- 📋 Dashboard -->
+  <div id="dashboard" style="display:none;">
+    <h2>📋 Loan Entry</h2>
+    <input type="text" id="borrower" placeholder="Borrower Name">
+    <input type="number" id="principal" placeholder="Principal ₹">
+    <input type="number" id="interest" placeholder="Interest %">
+    <button onclick="generateEMI()">Generate EMI</button>
+
+    <!-- 📅 EMI Output -->
+    <div id="emiOutput"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
